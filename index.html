@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Выписки Kaspi</title>
+    <meta
+      name="description"
+      content="Android-приложение: загружает PDF-выписки Kaspi Gold в вашу Google Таблицу с отчётами по людям."
+    />
+    <style>
+      :root {
+        --bg: #fff;
+        --text: #1d1d1f;
+        --muted: #5f6368;
+        --accent: #c62828;
+        --card: #f5f5f7;
+        --border: #e3e3e6;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #161618;
+          --text: #ececef;
+          --muted: #a1a1a8;
+          --accent: #ef6b6b;
+          --card: #222226;
+          --border: #333338;
+        }
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font:
+          17px/1.6 -apple-system,
+          "Segoe UI",
+          Roboto,
+          Arial,
+          sans-serif;
+      }
+      main {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 40px 16px 64px;
+      }
+      h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+        margin: 0 0 8px;
+      }
+      h2 {
+        font-size: 1.25rem;
+        margin: 36px 0 8px;
+      }
+      .lead {
+        color: var(--muted);
+        font-size: 1.1rem;
+        margin-top: 0;
+      }
+      .muted {
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+      a {
+        color: var(--accent);
+      }
+      ol.steps {
+        padding-left: 1.3em;
+      }
+      ol.steps li {
+        margin: 6px 0;
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 16px 20px;
+        margin: 20px 0;
+      }
+      hr {
+        border: none;
+        border-top: 1px solid var(--border);
+        margin: 48px 0 24px;
+      }
+      footer {
+        color: var(--muted);
+        font-size: 0.9rem;
+        margin-top: 48px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Выписки Kaspi</h1>
+      <p class="lead">
+        Android-приложение, которое переносит PDF-выписки Kaspi Gold в вашу
+        Google Таблицу и само строит отчёты: кому сколько ушло и от кого сколько
+        пришло.
+      </p>
+
+      <h2>Как это работает</h2>
+      <ol class="steps">
+        <li>Вы входите в приложение через свой Google-аккаунт.</li>
+        <li>Приложение создаёт таблицу на вашем Google Диске.</li>
+        <li>
+          Вы выбираете PDF-выписку Kaspi Gold — приложение разбирает её прямо на
+          телефоне и добавляет операции в таблицу. Повторы не добавляются, даже
+          если загрузить одну выписку несколько раз.
+        </li>
+        <li>
+          Отчёты по людям, по месяцам и по покупкам в таблице пересчитываются
+          сами.
+        </li>
+      </ol>
+
+      <div class="card">
+        <strong>Ваши данные остаются у вас.</strong>
+        Приложение получает доступ только к таблице, которую само создало, и не
+        видит другие файлы, почту и контакты. Выписки и операции не передаются
+        разработчику и третьим лицам. Подробнее — в
+        <a href="privacy.html">политике конфиденциальности</a>.
+      </div>
+
+      <h2>Контакты</h2>
+      <p>
+        Вопросы и поддержка:
+        <a href="mailto:peshevich99@gmail.com">peshevich99@gmail.com</a>
+      </p>
+
+      <hr />
+
+      <h2>Kaspi Statements (English)</h2>
+      <p>
+        An Android app that imports Kaspi Gold PDF bank statements into a Google
+        Sheet in the user's own Google Drive and builds per-person reports. The
+        app only accesses the spreadsheet it creates (scope
+        <code>drive.file</code>). Statements are parsed on the device; no data
+        is sent to the developer or third parties. See the
+        <a href="privacy.html#en">privacy policy</a>. Contact:
+        <a href="mailto:peshevich99@gmail.com">peshevich99@gmail.com</a>.
+      </p>
+
+      <footer>
+        <a href="privacy.html">Политика конфиденциальности / Privacy policy</a>
+      </footer>
+    </main>
+  </body>
+</html>
